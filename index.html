@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Skim & Ruru | Home</title>
+  </head>
+  <body>
+    <!-- TODO: Navbar -->
+    <nav class="bg-white text-black w-full uppercase tracking-[0.22px] py-2">
+      <div class="container mx-auto flex flex-row justify-between items-center">
+        <div>
+          <img
+            class="h-[50px]"
+            src="assets/images/logo (2).png"
+            alt="Shop Logo"
+          />
+        </div>
+        <ul
+          class="hidden md:flex flex-row justify-end items-center gap-16 font-black"
+        >
+          <li><a href="#">About</a></li>
+          <li><a href="#">Clothing</a></li>
+          <li><a href="#">Sale</a></li>
+          <li>
+            <a href="#" class="text-4xl"><i class="bx bx-cart"></i></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                class="w-[40px] h-[40px] rounded-full"
+                src="assets/images/profile pic.jpg"
+                alt=""
+            /></a>
+          </li>
+          <li class="">
+            <a href="#" class="bg-black text-white rounded-md px-4 py-4"
+              >Sign up</a
+            >
+          </li>
+        </ul>
+        <!-- Mobile Navbar -->
+        <div class="md:hidden z-[100]">
+          <div class="space-y-1 -rotate-180" id="hamburger">
+            <i class="text-3xl bx bx-menu-alt-right bx-flip-horizontal"></i>
+          </div>
+          <ul
+            class="flex flex-col justify-start gap-5 h-screen absolute top-0 left-0 bg-[#E6C744] p-16 items-start transition-all -translate-x-full"
+            id="mobile-nav"
+          >
+            <li>
+              <a href="#"
+                ><img class="w-[100px]" src="assets/images/logo (2).png" alt=""
+              /></a>
+            </li>
+            <li><a href="#">Catalogue</a></li>
+            <li><a href="#">Fashion</a></li>
+            <li><a href="#">Favourite</a></li>
+            <li><a href="#">Lifestyle</a></li>
+            <li class="">
+              <a href="#" class="text-white bg-black py-4 px-4 rounded-md"
+                >Sign up</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- TODO: Hero Section  -->
+    <div class="owl-carousel">
+      <div>
+        <img
+          class="h-[503px] md:h-[60vh] object-cover"
+          src="assets/images/banner.jpg"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          class="h-[503px] md:h-[60vh] object-cover"
+          src="assets/images/banner3.jpg"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          class="h-[503px] md:h-[60vh] object-cover"
+          src="assets/images/banner2.jpg"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <!-- TODO: Collection Section  -->
+    <section class="my-10 container mx-auto">
+      <div class="my-3">
+        <h3 class="text-center text-4xl text-black p-5">Collection</h3>
+        <p class="text-gray-400 font-medium text-center">
+          Experience elegance and confidence in our curated swim wear
+          collection. From timeless one-pieces to vibrant bikinis, our designs
+          cater to diverse tastes and body types. Embrace your unique beauty
+          with inclusive sizing options and fashion-forward styles. Crafted with
+          premium materials for comfort and durability, our swimwear ensures you
+          make a splash with style. Elevate your beachside glamour with
+          [Skim-Ruru] – where every piece is a celebration of individuality and
+          confidence
+        </p>
+      </div>
+      <!-- Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+        <!-- Card 1 -->
+        <div class="p-3">
+          <div class="bg-white rounded-lg shadow-lg relative">
+            <img
+              class="rounded-lg md:h-[298px] h-[40%] w-full"
+              src="assets/images/pic1.jpg"
+              alt=""
+            />
+            <div class="p-3">
+              <div class="flex justify-between gap-3 my-3">
+                <p class="font-medium text-gray-800">
+                  White Soft Women Swim Suit
+                </p>
+                <div class="flex flex-col items-end">
+                  <strong class="text-violet-600">$300</strong>
+                  <strike class="text-gray-400">$499</strike>
+                </div>
+              </div>
+              <div class="flex justify-between items-center mb-2">
+                <div class="flex gap-1">
+                  <span
+                    style="background-color: #acacac"
+                    class="w-5 h-5 rounded-full"
+                    >&nbsp;</span
+                  >
+                  <span
+                    style="background-color: darkmagenta"
+                    class="w-5 h-5 rounded-full"
+                    >&nbsp;</span
+                  >
+                  <span
+                    style="background-color: darkblue"
+                    class="w-5 h-5 rounded-full"
+                    >&nbsp;</span
+                  >
+                </div>
+                <div class="flex gap-1 text-gray-400 text-sm">
+                  <span
+                    class="flex justify-center w-5 h-5 rounded-full border border-gray-400"
+                    >S</span
+                  >
+                  <span
+                    class="flex justify-center w-5 h-5 rounded-full border border-gray-400"
+                    >M</span
+                  >
+                  <span
+                    class="flex justify-center w-5 h-5 rounded-full border border-gray-400"
+                    >L</span
+                  >
+                </div>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-gray-400"><i class="bx bx-star"></i>4.5</span>
+                <span class="text-violet-600 flex items-center font-bold"
+                  ><i class="bx bx-cart-add text-2xl"></i>Buy Now</span
+                >
+              </div>
+              <div
+                class="absolute top-2 left-3 right-3 flex justify-between items-center"
+              >
+                <span class="bg-red-500 text-white rounded px-2 text-xs"
+                  >-25%</span
+                >
+                <span
+                  class="bg-white shadow-md rounded-full w-7 h-7 flex items-center justify-center"
+                  ><i class="bx bx-heart text-xl"></i
+                ></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="p-3">
+          <div class="bg-white rounded-lg shadow-lg relative">
+            <img
+              class="rounded-lg md:h-[298px] h-[40%] w-full"
+              src="assets/images/pic8.jpg"
+              alt=""
+            />
+            <div class="p-3">
+              <div class="flex justify-between gap-3 my-3">
+                <p class="font-medium text-gray-800">
+                  Blue trendy Women Swim Suit
+                </p>
+                <div class="flex flex-col items-end">
+                  <strong class="text-violet-600">$400</strong>
+                  <strike class="text-gray-400">$699</strike>
+                </div>
+              </div>
+              <div class="flex justify-between items-center mb-2">
+                <div class="flex gap-1">
+                  <span
+                    style="background-color: blue"
+                    class="w-5 h-5 rounded-full"
+                    >&nbsp;</span
+                  >
+                  <span
+                    style="background-color: darkmagenta"
+                    class="w-5 h-5 rounded-full"
+                    >&nbsp;</span
+                  >
+                  <span
+                    style="background-color: darkblue"
+                    class="w-5 h-5 rounded-full"
+                    >&nbsp;</span
+                  >
+                </div>
+                <div class="flex gap-1 text-gray-400 text-sm">
+                  <span
+                    class="flex justify-center w-5 h-5 rounded-full border border-gray-400"
+                    >S</span
+                  >
+                  <span
+                    class="flex justify-center w-5 h-5 rounded-full border border-gray-400"
+                    >M</span
+                  >
+                  <span
+                    class="flex justify-center w-5 h-5 rounded-full border border-gray-400"
+                    >L</span
+                  >
+                </div>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-gray-400"><i class="bx bx-star"></i>4.5</span>
+                <span class="text-violet-600 flex items-center font-bold"
+                  ><i class="bx bx-cart-add text-2xl"></i>Buy Now</span
+                >
+              </div>
+              <div
+                class="absolute top-2 left-3 right-3 flex justify-between items-center"
+              >
+                <span class="bg-red-500 text-white rounded px-2 text-xs"
+                  >-35%</span
+                >
+                <span
+                  class="bg-white shadow-md rounded-full w-7 h-7 flex items-center justify-center"
+                  ><i class="bx bx-heart text-xl"></i
+                ></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="p-3">
+          <div class="bg-white rounded-lg shadow-lg relative">
+            <img
+              class="rounded-lg md:h-[298px] h-[40%] w-full"
+              src="assets/images/pic9.jpg"
+              alt=""
+            />
+            <div class="p-3">
+              <div class="flex justify-between gap-3 my-3">
+                <p class="font-medium text-gray-800">
+                  twin color Women Swim Suit
+                </p>
+                <div class="flex flex-col items-end">
+                  <strong class="text-violet-600">$500</strong>
+                  <strike class="text-gray-400">$899</strike>
+                </div>
+              </div>
+              <div class="flex justify-between items-center mb-2">
+                <div class="flex gap-1">
+                  <span
+                    style="background-color: chocolate"
+                    class="w-5 h-5 rounded-full"
+                    >&nbsp;</span
+                  >
+                  <span
+                    style="background-color: darkmagenta"
+                    class="w-5 h-5 rounded-full"
+                    >&nbsp;</span
+                  >
+                  <span
+                    style="background-color: darkblue"
+                    class="w-5 h-5 rounded-full"
+                    >&nbsp;</span
+                  >
+                </div>
+                <div class="flex gap-1 text-gray-400 text-sm">
+                  <span
+                    class="flex justify-center w-5 h-5 rounded-full border border-gray-400"
+                    >S</span
+                  >
+                  <span
+                    class="flex justify-center w-5 h-5 rounded-full border border-gray-400"
+                    >M</span
+                  >
+                  <span
+                    class="flex justify-center w-5 h-5 rounded-full border border-gray-400"
+                    >L</span
+                  >
+                </div>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-gray-400"><i class="bx bx-star"></i>4.5</span>
+                <span class="text-violet-600 flex items-center font-bold"
+                  ><i class="bx bx-cart-add text-2xl"></i>Buy Now</span
+                >
+              </div>
+              <div
+                class="absolute top-2 left-3 right-3 flex justify-between items-center"
+              >
+                <span class="bg-red-500 text-white rounded px-2 text-xs"
+                  >-55%</span
+                >
+                <span
+                  class="bg-white shadow-md rounded-full w-7 h-7 flex items-center justify-center"
+                  ><i class="bx bx-heart text-xl"></i
+                ></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="p-3">
+          <div class="bg-white rounded-lg shadow-lg relative">
+            <img
+              class="rounded-lg md:h-[298px] h-[40%] w-full"
+              src="assets/images/pic6.jpg"
+              alt=""
+            />
+            <div class="p-3">
+              <div class="flex justify-between gap-3 my-3">
+                <p class="font-medium text-gray-800">
+                  Black Off-Shoulder Swim Suit
+                </p>
+                <div class="flex flex-col items-end">
+                  <strong class="text-violet-600">$350</strong>
+                  <strike class="text-gray-400">$450</strike>
+                </div>
+              </div>
+              <div class="flex justify-between items-center mb-2">
+                <div class="flex gap-1">
+                  <span
+                    style="background-color: #000"
+                    class="w-5 h-5 rounded-full"
+                    >&nbsp;</span
+                  >
+                  <span
+                    style="background-color: darkmagenta"
+                    class="w-5 h-5 rounded-full"
+                    >&nbsp;</span
+                  >
+                  <span
+                    style="background-color: darkblue"
+                    class="w-5 h-5 rounded-full"
+                    >&nbsp;</span
+                  >
+                </div>
+                <div class="flex gap-1 text-gray-400 text-sm">
+                  <span
+                    class="flex justify-center w-5 h-5 rounded-full border border-gray-400"
+                    >S</span
+                  >
+                  <span
+                    class="flex justify-center w-5 h-5 rounded-full border border-gray-400"
+                    >M</span
+                  >
+                  <span
+                    class="flex justify-center w-5 h-5 rounded-full border border-gray-400"
+                    >L</span
+                  >
+                </div>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-gray-400"><i class="bx bx-star"></i>4.5</span>
+                <span class="text-violet-600 flex items-center font-bold"
+                  ><i class="bx bx-cart-add text-2xl"></i>Buy Now</span
+                >
+              </div>
+              <div
+                class="absolute top-2 left-3 right-3 flex justify-between items-center"
+              >
+                <span class="bg-red-500 text-white rounded px-2 text-xs"
+                  >-10%</span
+                >
+                <span
+                  class="bg-white shadow-md rounded-full w-7 h-7 flex items-center justify-center"
+                  ><i class="bx bx-heart text-xl"></i
+                ></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 5 -->
+        <div class="p-3">
+          <div class="bg-white rounded-lg shadow-lg relative">
+            <img
+              class="rounded-lg md:h-[298px] h-[40%] w-full"
+              src="assets/images/pic5.jpg"
+              alt=""
+            />
+            <div class="p-3">
+              <div class="flex justify-between gap-3 my-3">
+                <p class="font-medium text-gray-800">
+                  Fancy Pink Women Swim Suit
+                </p>
+                <div class="flex flex-col items-end">
+                  <strong class="text-violet-600">$650</strong>
+                  <strike class="text-gray-400">$799</strike>
+                </div>
+              </div>
+              <div class="flex justify-between items-center mb-2">
+                <div class="flex gap-1">
+                  <span
+                    style="background-color: palevioletred"
+                    class="w-5 h-5 rounded-full"
+                    >&nbsp;</span
+                  >
+                  <span
+                    style="background-color: darkmagenta"
+                    class="w-5 h-5 rounded-full"
+                    >&nbsp;</span
+                  >
+                  <span
+                    style="background-color: darkblue"
+                    class="w-5 h-5 rounded-full"
+                    >&nbsp;</span
+                  >
+                </div>
+                <div class="flex gap-1 text-gray-400 text-sm">
+                  <span
+                    class="flex justify-center w-5 h-5 rounded-full border border-gray-400"
+                    >S</span
+                  >
+                  <span
+                    class="flex justify-center w-5 h-5 rounded-full border border-gray-400"
+                    >M</span
+                  >
+                  <span
+                    class="flex justify-center w-5 h-5 rounded-full border border-gray-400"
+                    >L</span
+                  >
+                </div>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-gray-400"><i class="bx bx-star"></i>4.5</span>
+                <span class="text-violet-600 flex items-center font-bold"
+                  ><i class="bx bx-cart-add text-2xl"></i>Buy Now</span
+                >
+              </div>
+              <div
+                class="absolute top-2 left-3 right-3 flex justify-between items-center"
+              >
+                <span class="bg-red-500 text-white rounded px-2 text-xs"
+                  >-25%</span
+                >
+                <span
+                  class="bg-white shadow-md rounded-full w-7 h-7 flex items-center justify-center"
+                  ><i class="bx bx-heart text-xl"></i
+                ></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 6 -->
+        <div class="p-3">
+          <div class="bg-white rounded-lg shadow-lg relative">
+            <img
+              class="rounded-lg md:h-[298px] h-[40%] w-full"
+              src="assets/images/pic7.jpg"
+              alt=""
+            />
+            <div class="p-3">
+              <div class="flex justify-between gap-3 my-3">
+                <p class="font-medium text-gray-800">
+                  pink casual Women Swim Suit
+                </p>
+                <div class="flex flex-col items-end">
+                  <strong class="text-violet-600">$299</strong>
+                  <strike class="text-gray-400">$600</strike>
+                </div>
+              </div>
+              <div class="flex justify-between items-center mb-2">
+                <div class="flex gap-1">
+                  <span
+                    style="background-color: pink"
+                    class="w-5 h-5 rounded-full"
+                    >&nbsp;</span
+                  >
+                  <span
+                    style="background-color: darkmagenta"
+                    class="w-5 h-5 rounded-full"
+                    >&nbsp;</span
+                  >
+                  <span
+                    style="background-color: darkblue"
+                    class="w-5 h-5 rounded-full"
+                    >&nbsp;</span
+                  >
+                </div>
+                <div class="flex gap-1 text-gray-400 text-sm">
+                  <span
+                    class="flex justify-center w-5 h-5 rounded-full border border-gray-400"
+                    >S</span
+                  >
+                  <span
+                    class="flex justify-center w-5 h-5 rounded-full border border-gray-400"
+                    >M</span
+                  >
+                  <span
+                    class="flex justify-center w-5 h-5 rounded-full border border-gray-400"
+                    >L</span
+                  >
+                </div>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-gray-400"><i class="bx bx-star"></i>4.5</span>
+                <span class="text-violet-600 flex items-center font-bold"
+                  ><i class="bx bx-cart-add text-2xl"></i>Buy Now</span
+                >
+              </div>
+              <div
+                class="absolute top-2 left-3 right-3 flex justify-between items-center"
+              >
+                <span class="bg-red-500 text-white rounded px-2 text-xs"
+                  >-75%</span
+                >
+                <span
+                  class="bg-white shadow-md rounded-full w-7 h-7 flex items-center justify-center"
+                  ><i class="bx bx-heart text-xl"></i
+                ></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card 7 -->
+        <div class="p-3">
+          <div class="bg-white rounded-lg shadow-lg relative">
+            <img
+              class="rounded-lg md:h-[298px] h-[40%] w-full"
+              src="assets/images/pic12.jpg"
+              alt=""
+            />
+            <div class="p-3">
+              <div class="flex justify-between gap-3 my-3">
+                <p class="font-medium text-gray-800">
+                  Black trendy net Women Swim Suit
+                </p>
+                <div class="flex flex-col items-end">
+                  <strong class="text-violet-600">$799</strong>
+                  <strike class="text-gray-400">$900</strike>
+                </div>
+              </div>
+              <div class="flex justify-between items-center mb-2">
+                <div class="flex gap-1">
+                  <span
+                    style="background-color: #000"
+                    class="w-5 h-5 rounded-full"
+                    >&nbsp;</span
+                  >
+                  <span
+                    style="background-color: darkmagenta"
+                    class="w-5 h-5 rounded-full"
+                    >&nbsp;</span
+                  >
+                  <span
+                    style="background-color: darkblue"
+                    class="w-5 h-5 rounded-full"
+                    >&nbsp;</span
+                  >
+                </div>
+                <div class="flex gap-1 text-gray-400 text-sm">
+                  <span
+                    class="flex justify-center w-5 h-5 rounded-full border border-gray-400"
+                    >S</span
+                  >
+                  <span
+                    class="flex justify-center w-5 h-5 rounded-full border border-gray-400"
+                    >M</span
+                  >
+                  <span
+                    class="flex justify-center w-5 h-5 rounded-full border border-gray-400"
+                    >L</span
+                  >
+                </div>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-gray-400"><i class="bx bx-star"></i>4.5</span>
+                <span class="text-violet-600 flex items-center font-bold"
+                  ><i class="bx bx-cart-add text-2xl"></i>Buy Now</span
+                >
+              </div>
+              <div
+                class="absolute top-2 left-3 right-3 flex justify-between items-center"
+              >
+                <span class="bg-red-500 text-white rounded px-2 text-xs"
+                  >-10%</span
+                >
+                <span
+                  class="bg-white shadow-md rounded-full w-7 h-7 flex items-center justify-center"
+                  ><i class="bx bx-heart text-xl"></i
+                ></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card 8 -->
+        <div class="p-3">
+          <div class="bg-white rounded-lg shadow-lg relative">
+            <img
+              class="rounded-lg md:h-[298px] h-[40%] w-full"
+              src="assets/images/pic14.jpg"
+              alt=""
+            />
+            <div class="p-3">
+              <div class="flex justify-between gap-3 my-3">
+                <p class="font-medium text-gray-800">
+                  White-smoke stylish Women Swim Suit
+                </p>
+                <div class="flex flex-col items-end">
+                  <strong class="text-violet-600">$220</strong>
+                  <strike class="text-gray-400">$400</strike>
+                </div>
+              </div>
+              <div class="flex justify-between items-center mb-2">
+                <div class="flex gap-1">
+                  <span
+                    style="background-color: whitesmoke"
+                    class="w-5 h-5 rounded-full"
+                    >&nbsp;</span
+                  >
+                  <span
+                    style="background-color: darkmagenta"
+                    class="w-5 h-5 rounded-full"
+                    >&nbsp;</span
+                  >
+                  <span
+                    style="background-color: darkblue"
+                    class="w-5 h-5 rounded-full"
+                    >&nbsp;</span
+                  >
+                </div>
+                <div class="flex gap-1 text-gray-400 text-sm">
+                  <span
+                    class="flex justify-center w-5 h-5 rounded-full border border-gray-400"
+                    >S</span
+                  >
+                  <span
+                    class="flex justify-center w-5 h-5 rounded-full border border-gray-400"
+                    >M</span
+                  >
+                  <span
+                    class="flex justify-center w-5 h-5 rounded-full border border-gray-400"
+                    >L</span
+                  >
+                </div>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-gray-400"><i class="bx bx-star"></i>4.5</span>
+                <span class="text-violet-600 flex items-center font-bold"
+                  ><i class="bx bx-cart-add text-2xl"></i>Buy Now</span
+                >
+              </div>
+              <div
+                class="absolute top-2 left-3 right-3 flex justify-between items-center"
+              >
+                <span class="bg-red-500 text-white rounded px-2 text-xs"
+                  >-20%</span
+                >
+                <span
+                  class="bg-white shadow-md rounded-full w-7 h-7 flex items-center justify-center"
+                  ><i class="bx bx-heart text-xl"></i
+                ></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TODO: Footer  -->
+    <footer
+      class="bg-black py-[125px] text-white flex flex-col gap-24 px-14 lg:items-center lg:flex-row lg:justify-between sm:px-[100px]"
+    >
+      <div class="flex flex-col md:items-center items-start gap-8">
+        <div>
+          <img src="assets/images/logo (2).png" />
+        </div>
+        <div>
+          <p class="text-center text-xl text-[#8E8E8E] md:text-2xl font-normal">
+            Complete your style with awesome clothes from us.
+          </p>
+        </div>
+        <ul class="flex flex-row gap-[14px]">
+          <li>
+            <a href="#"><img src="./images/fb.svg" alt="" srcset="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./images/insta.svg" alt="" srcset="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./images/twitter.svg" alt="" srcset="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./images/linkedin.png" alt="" srcset="" /></a>
+          </li>
+        </ul>
+      </div>
+      <div class="flex flex-col justify-between gap-24 md:flex-row">
+        <div class="flex flex-col text-[#D9D9D9] gap-8">
+          <h4 class="font-bold">Company</h4>
+          <ul class="flex flex-col gap-8">
+            <li><a href="http://">About us</a></li>
+            <li><a href="http://">Contact us</a></li>
+            <li><a href="http://">Support</a></li>
+            <li><a href="http://">Carrers</a></li>
+          </ul>
+        </div>
+        <div class="flex flex-col text-[#D9D9D9] gap-8">
+          <h4 class="font-bold">Quick Link</h4>
+          <ul class="flex flex-col gap-8">
+            <li><a href="http://">Share Location</a></li>
+            <li><a href="http://">Orders Tracking</a></li>
+            <li><a href="http://">Size Guide</a></li>
+            <li><a href="http://">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="flex flex-col text-[#D9D9D9] gap-8">
+          <h4 class="font-bold">Legal</h4>
+          <ul class="flex flex-col gap-8">
+            <li><a href="http://">Terms & conditions</a></li>
+            <li><a href="http://">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script>
+      // Navbar
+      const hamburger = document.querySelector("#hamburger");
+      const mobileNav = document.querySelector("#mobile-nav");
+
+      hamburger.addEventListener("click", () => {
+        mobileNav.classList.toggle("-translate-x-full");
+      });
+      // Owl container
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          loop: true,
+          margin: 10,
+          nav: false,
+          dots: false,
+          autoplay: true,
+          autoplaytimeout: 1000,
+          responsiveClass: true,
+          autoheight: true,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            600: {
+              items: 1,
+            },
+            1000: {
+              items: 1,
+            },
+          },
+        });
+      });
+    </script>
+  </body>
+</html>
