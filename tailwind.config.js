@@ -6,7 +6,15 @@ module.exports = {
       poppins: ["Poppins", "sans-serif"],
     },
     extend: {
-      
+      animation: {
+        'infinite-scroll': 'infinite-scroll 25s linear infinite',
+      },
+      keyframes: {
+        'infinite-scroll': {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(-100%)' },
+      },
+    },
       colors: {
         primary: "#E6C744",
         secondary: "#C2C8DA",

@@ -7,66 +7,157 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link rel="icon" href="assets/images/icon.png" />
     <link rel="stylesheet" href="css/owl.carousel.min.css" />
     <link rel="stylesheet" href="css/owl.theme.default.min.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css"
+      rel="stylesheet"
+    />
     <title>Skim & Ruru | Home</title>
   </head>
   <body>
     <!-- TODO: Navbar -->
-    <nav class="bg-white text-black w-full uppercase tracking-[0.22px] py-2">
-      <div class="container mx-auto flex flex-row justify-between items-center">
-        <div>
-          <img
-            class="h-[50px]"
-            src="assets/images/logo (2).png"
-            alt="Shop Logo"
-          />
-        </div>
-        <ul
-          class="hidden md:flex flex-row justify-end items-center gap-16 font-black"
+    <nav class="bg-white border-gray-200">
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 bg-white"
+      >
+        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img src="assets/images/logo (2).png" class="h-8" alt=" Logo" />
+          <span
+            class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+          ></span>
+        </a>
+        <div
+          class="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse"
         >
-          <li><a href="#">About</a></li>
-          <li><a href="#">Clothing</a></li>
-          <li><a href="#">Sale</a></li>
-          <li>
-            <a href="#" class="text-4xl"><i class="bx bx-cart"></i></a>
-          </li>
-          <li>
-            <a href="#"
-              ><img
-                class="w-[40px] h-[40px] rounded-full"
-                src="assets/images/profile pic.jpg"
-                alt=""
-            /></a>
-          </li>
-          <li class="">
-            <a href="#" class="bg-black text-white rounded-md px-4 py-4"
-              >Sign up</a
-            >
-          </li>
-        </ul>
-        <!-- Mobile Navbar -->
-        <div class="md:hidden z-[100]">
-          <div class="space-y-1 -rotate-180" id="hamburger">
-            <i class="text-3xl bx bx-menu-alt-right bx-flip-horizontal"></i>
+          <button
+            type="button"
+            class="flex text-sm bg-gray-800 rounded-full md:me-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"
+            id="user-menu-button"
+            aria-expanded="false"
+            data-dropdown-toggle="user-dropdown"
+            data-dropdown-placement="bottom"
+          >
+            <span class="sr-only">Open user menu</span>
+            <img
+              class="w-8 h-8 rounded-full"
+              src="assets/images/profile pic.jpg"
+              alt="user photo"
+            />
+          </button>
+          <!-- Dropdown menu -->
+          <div
+            class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600"
+            id="user-dropdown"
+          >
+            <div class="px-4 py-3">
+              <span class="block text-sm text-gray-900 dark:text-white"
+                >Bonnie Green</span
+              >
+              <span
+                class="block text-sm text-gray-500 truncate dark:text-gray-400"
+                >name@.com</span
+              >
+            </div>
+            <ul class="py-2" aria-labelledby="user-menu-button">
+              <li>
+                <a
+                  href="#"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                  >Dashboard</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                  >Settings</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                  >Earnings</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+                  >Sign out</a
+                >
+              </li>
+            </ul>
           </div>
+          <button
+            data-collapse-toggle="navbar-user"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-user"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+        </div>
+        <div
+          class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+          id="navbar-user"
+        >
           <ul
-            class="flex flex-col justify-start gap-5 h-screen absolute top-0 left-0 bg-[#E6C744] p-16 items-start transition-all -translate-x-full"
-            id="mobile-nav"
+            class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0"
           >
             <li>
-              <a href="#"
-                ><img class="w-[100px]" src="assets/images/logo (2).png" alt=""
-              /></a>
+              <a
+                href="#"
+                class="block py-2 px-3 text-black bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
+                aria-current="page"
+                >Home</a
+              >
             </li>
-            <li><a href="#">Catalogue</a></li>
-            <li><a href="#">Fashion</a></li>
-            <li><a href="#">Favourite</a></li>
-            <li><a href="#">Lifestyle</a></li>
-            <li class="">
-              <a href="#" class="text-white bg-black py-4 px-4 rounded-md"
-                >Sign up</a
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-black md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-black md:dark:hover:bg-transparent dark:border-gray-700"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-black md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-black md:dark:hover:bg-transparent dark:border-gray-700"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-black md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-black md:dark:hover:bg-transparent dark:border-gray-700"
+                >Pricing</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-black md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-black md:dark:hover:bg-transparent dark:border-gray-700"
+                >Contact</a
               >
             </li>
           </ul>
@@ -114,29 +205,27 @@
         </p>
       </div>
       <!-- Cards -->
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
         <!-- Card 1 -->
         <div class="p-3">
           <div class="bg-white rounded-lg shadow-lg relative">
             <img
-              class="rounded-lg md:h-[298px] h-[40%] w-full"
-              src="assets/images/pic1.jpg"
+              class="rounded-lg md:h-[298px] w-full"
+              src="assets/images/pic4.jpg"
               alt=""
             />
             <div class="p-3">
               <div class="flex justify-between gap-3 my-3">
-                <p class="font-medium text-gray-800">
-                  White Soft Women Swim Suit
-                </p>
+                <p class="font-medium text-gray-800">White Women Swim Suit</p>
                 <div class="flex flex-col items-end">
-                  <strong class="text-violet-600">$300</strong>
-                  <strike class="text-gray-400">$499</strike>
+                  <strong class="text-violet-600">$210</strong>
+                  <strike class="text-gray-400">$250</strike>
                 </div>
               </div>
               <div class="flex justify-between items-center mb-2">
                 <div class="flex gap-1">
                   <span
-                    style="background-color: #acacac"
+                    style="background-color: whitesmoke"
                     class="w-5 h-5 rounded-full"
                     >&nbsp;</span
                   >
@@ -176,7 +265,7 @@
                 class="absolute top-2 left-3 right-3 flex justify-between items-center"
               >
                 <span class="bg-red-500 text-white rounded px-2 text-xs"
-                  >-25%</span
+                  >-10%</span
                 >
                 <span
                   class="bg-white shadow-md rounded-full w-7 h-7 flex items-center justify-center"
@@ -190,7 +279,7 @@
         <div class="p-3">
           <div class="bg-white rounded-lg shadow-lg relative">
             <img
-              class="rounded-lg md:h-[298px] h-[40%] w-full"
+              class="rounded-lg md:h-[298px] w-full"
               src="assets/images/pic8.jpg"
               alt=""
             />
@@ -261,7 +350,7 @@
         <div class="p-3">
           <div class="bg-white rounded-lg shadow-lg relative">
             <img
-              class="rounded-lg md:h-[298px] h-[40%] w-full"
+              class="rounded-lg md:h-[298px] w-full"
               src="assets/images/pic9.jpg"
               alt=""
             />
@@ -332,7 +421,7 @@
         <div class="p-3">
           <div class="bg-white rounded-lg shadow-lg relative">
             <img
-              class="rounded-lg md:h-[298px] h-[40%] w-full"
+              class="rounded-lg md:h-[298px] w-full"
               src="assets/images/pic6.jpg"
               alt=""
             />
@@ -403,7 +492,7 @@
         <div class="p-3">
           <div class="bg-white rounded-lg shadow-lg relative">
             <img
-              class="rounded-lg md:h-[298px] h-[40%] w-full"
+              class="rounded-lg md:h-[298px] w-full"
               src="assets/images/pic5.jpg"
               alt=""
             />
@@ -474,7 +563,7 @@
         <div class="p-3">
           <div class="bg-white rounded-lg shadow-lg relative">
             <img
-              class="rounded-lg md:h-[298px] h-[40%] w-full"
+              class="rounded-lg md:h-[298px] w-full"
               src="assets/images/pic7.jpg"
               alt=""
             />
@@ -545,7 +634,7 @@
         <div class="p-3">
           <div class="bg-white rounded-lg shadow-lg relative">
             <img
-              class="rounded-lg md:h-[298px] h-[40%] w-full"
+              class="rounded-lg md:h-[298px] w-full"
               src="assets/images/pic12.jpg"
               alt=""
             />
@@ -616,7 +705,7 @@
         <div class="p-3">
           <div class="bg-white rounded-lg shadow-lg relative">
             <img
-              class="rounded-lg md:h-[298px] h-[40%] w-full"
+              class="rounded-lg md:h-[298px] w-full"
               src="assets/images/pic14.jpg"
               alt=""
             />
@@ -685,7 +774,204 @@
         </div>
       </div>
     </section>
+    <!-- End of Cards Section -->
+    <!-- Marquee -->
 
+    <section class="my-16">
+      <div class="flex overflow-hidden space-x-16 items-center justify-between">
+        <div class="flex space-x-8 animate-loop-scroll overflow-hidden">
+          <img
+            class="h-[20px]"
+            loading="lazy"
+            src="assets/logos/3m.svg"
+            class="max-w-none"
+            alt="loop-1"
+          />
+          <img
+            class="h-[20px]"
+            loading="lazy"
+            src="assets/logos/barstool-store.svg"
+            class="max-w-none"
+            alt="loop-2"
+          />
+          <img
+            class="h-[20px]"
+            loading="lazy"
+            src="assets/logos/budweiser.svg"
+            class="max-w-none"
+            alt="loop-3"
+          />
+          <img
+            class="h-[20px]"
+            loading="lazy"
+            src="assets/logos/buzzfeed.svg"
+            class="max-w-none"
+            alt="loop-4"
+          />
+          <img
+            class="h-[20px]"
+            loading="lazy"
+            src="assets/logos/forbes.svg"
+            class="max-w-none"
+            alt="loop-5"
+          />
+          <img
+            class="h-[20px]"
+            loading="lazy"
+            src="assets/logos/macys.svg"
+            class="max-w-none"
+            alt="loop-6"
+          />
+          <img
+            class="h-[20px]"
+            loading="lazy"
+            src="assets/logos/menshealth.svg"
+            class="max-w-none"
+            alt="loop-7"
+          />
+          <img
+            class="h-[20px]"
+            loading="lazy"
+            src="assets/logos/mrbeast.svg"
+            class="max-w-none"
+            alt="loop-8"
+          />
+        </div>
+        <div
+          class="flex space-x-8 animate-loop-scroll overflow-hidden"
+          aria-hidden="true"
+        >
+          <img
+            class="h-[20px]"
+            loading="lazy"
+            src="assets/logos/3m.svg"
+            class="max-w-none"
+            alt="loop-1"
+          />
+          <img
+            class="h-[20px]"
+            loading="lazy"
+            src="assets/logos/barstool-store.svg"
+            class="max-w-none"
+            alt="loop-2"
+          />
+          <img
+            class="h-[20px]"
+            loading="lazy"
+            src="assets/logos/budweiser.svg"
+            class="max-w-none"
+            alt="loop-3"
+          />
+          <img
+            class="h-[20px]"
+            loading="lazy"
+            src="assets/logos/buzzfeed.svg"
+            class="max-w-none"
+            alt="loop-4"
+          />
+          <img
+            class="h-[20px]"
+            loading="lazy"
+            src="assets/logos/forbes.svg"
+            class="max-w-none"
+            alt="loop-5"
+          />
+          <img
+            class="h-[20px]"
+            loading="lazy"
+            src="assets/logos/macys.svg"
+            class="max-w-none"
+            alt="loop-6"
+          />
+          <img
+            class="h-[20px]"
+            loading="lazy"
+            src="assets/logos/menshealth.svg"
+            class="max-w-none"
+            alt="loop-7"
+          />
+          <img
+            class="h-[20px]"
+            loading="lazy"
+            src="assets/logos/mrbeast.svg"
+            class="max-w-none"
+            alt="loop-8"
+          />
+        </div>
+      </div>
+    </section>
+    <!--End of Marquee Section-->
+    <section class="my-16">
+      <div
+        x-data="{}"
+        x-init="$nextTick(() => {
+        let ul = $refs.logos;
+        ul.insertAdjacentHTML('afterend', ul.outerHTML);
+        ul.nextSibling.setAttribute('aria-hidden', 'true');
+    })"
+        class="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]"
+      >
+        <ul
+          x-ref="logos"
+          class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll"
+          aria-hidden="true"
+        >
+          <li>
+            <img src="assets/logos/3m.svg" alt="Facebook" />
+          </li>
+          <li>
+            <img src="assets/logos/3m.svg" alt="Disney" />
+          </li>
+          <li>
+            <img src="assets/logos/3m.svg" alt="Airbnb" />
+          </li>
+          <li>
+            <img src="assets/logos/3m.svg" alt="Apple" />
+          </li>
+          <li>
+            <img src="assets/logos/3m.svg" alt="Spark" />
+          </li>
+          <li>
+            <img src="assets/logos/3m.svg" alt="Samsung" />
+          </li>
+          <li>
+            <img src="assets/logos/3m.svg" alt="Quora" />
+          </li>
+          <li>
+            <img src="assets/logos/3m.svg" alt="Sass" />
+          </li>
+        </ul>
+        <ul
+          x-ref="logos"
+          class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll"
+        >
+          <li>
+            <img src="assets/logos/3m.svg" alt="Facebook" />
+          </li>
+          <li>
+            <img src="assets/logos/3m.svg" alt="Disney" />
+          </li>
+          <li>
+            <img src="assets/logos/3m.svg" alt="Airbnb" />
+          </li>
+          <li>
+            <img src="assets/logos/3m.svg" alt="Apple" />
+          </li>
+          <li>
+            <img src="assets/logos/3m.svg" alt="Spark" />
+          </li>
+          <li>
+            <img src="assets/logos/3m.svg" alt="Samsung" />
+          </li>
+          <li>
+            <img src="assets/logos/3m.svg" alt="Quora" />
+          </li>
+          <li>
+            <img src="assets/logos/3m.svg" alt="Sass" />
+          </li>
+        </ul>
+      </div>
+    </section>
     <!-- TODO: Footer  -->
     <footer
       class="bg-black py-[125px] text-white flex flex-col gap-24 px-14 lg:items-center lg:flex-row lg:justify-between sm:px-[100px]"
@@ -745,14 +1031,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="js/jquery-3.6.1.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
     <script>
-      // Navbar
-      const hamburger = document.querySelector("#hamburger");
-      const mobileNav = document.querySelector("#mobile-nav");
-
-      hamburger.addEventListener("click", () => {
-        mobileNav.classList.toggle("-translate-x-full");
-      });
       // Owl container
       $(document).ready(function () {
         $(".owl-carousel").owlCarousel({
